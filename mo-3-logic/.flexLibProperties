@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="mo.gm.core.core.FLgLogic"/>
+    <classEntry path="mo.gm.core.core.FLgProcessor"/>
+    <classEntry path="mo.gl.console.organization.FLgOrganizationConsole"/>
+    <classEntry path="mo.gl.console.RLgConsole"/>
+    <classEntry path="mo.gm.core.core.ELgConstant"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
