@@ -8,7 +8,7 @@ package
    import mo.cm.console.RCmConsole;
    import mo.cm.console.environment.FEnvironment;
    import mo.gl.console.RLgConsole;
-   import mo.gm.core.core.ELgConstant;
+   import mo.gm.core.core.ELgConstant; 
    
    public class Main extends Sprite
    {
