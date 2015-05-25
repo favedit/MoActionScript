@@ -89,29 +89,38 @@ package mo.cm.console.loader
          _logger.debug("onContentComplete", "Load content complete. (size={1}, url={2})", loader.bytesLoaded, uri);
          isOpen = false;
          loading = false;
-         var d:ByteArray = loader.data;
-         d.endian = Endian.LITTLE_ENDIAN;
+		 var data:* = null;
+		 if(format == URLLoaderDataFormat.BINARY){
+			 var bytes:ByteArray = loader.data;
+			 bytes.endian = Endian.LITTLE_ENDIAN;
+			 data = bytes;
+		 }else{
+			 data = loader.data;
+		 }
          // 加载计时
          endTick = RTimer.getTick();
          loadTick = endTick - beginTick;
          RLoader.info.load(loader.bytesLoaded, loadTick);
          // 加载事件
-         var le:FLoaderEvent = new FLoaderEvent();
-         le.loader = this;
-         le.sender = this;
-         le.data = d;
-         if(onComplete(le)){
+         var event:FLoaderEvent = new FLoaderEvent();
+		 event.loader = this;
+         event.sender = this;
+         event.data = data;
+         if(onComplete(event)){
             if(null != lsnsComplete){
-               lsnsComplete.process(le);
+               lsnsComplete.process(event);
             }
          }
          // 释放资源
-         d.clear();
-         d = null;
+		 if(format == URLLoaderDataFormat.BINARY){
+			 bytes = data as ByteArray;
+			 data.clear();
+		 }
+         data = null;
          loader.data = null;
          loader.close();
-         le.dispose();
-         le = null;
+         event.dispose();
+         event = null;
       }
       
       //============================================================

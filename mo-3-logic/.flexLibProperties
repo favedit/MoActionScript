@@ -3,7 +3,7 @@
   <includeClasses>
     <classEntry path="mo.gm.core.core.FLgLogic"/>
     <classEntry path="mo.gm.core.core.FLgProcessor"/>
-    <classEntry path="mo.gl.console.organization.FLgOrganizationConsole"/>
+    <classEntry path="mo.gl.console.organization.FLgAchievementConsole"/>
     <classEntry path="mo.gl.console.RLgConsole"/>
     <classEntry path="mo.gm.core.core.ELgConstant"/>
   </includeClasses>
