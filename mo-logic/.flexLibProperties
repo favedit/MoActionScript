@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
   <includeClasses>
-    <classEntry path="mo.gm.core.core.FLgLogic"/>
-    <classEntry path="mo.gm.core.core.FLgProcessor"/>
-    <classEntry path="mo.gl.console.organization.FLgAchievementConsole"/>
-    <classEntry path="mo.gl.console.RLgConsole"/>
     <classEntry path="mo.gm.core.core.ELgConstant"/>
-    <classEntry path="mo.gm.core.core.RLgCurrency"/>
+    <classEntry path="mo.gm.core.core.FLgLogic"/>
     <classEntry path="mo.gm.core.core.FLgNumberTimer"/>
+    <classEntry path="mo.gm.core.core.FLgProcessor"/>
+    <classEntry path="mo.gm.core.core.RLgCurrency"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

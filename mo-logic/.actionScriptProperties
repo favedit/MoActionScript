@@ -3,10 +3,8 @@
   <compiler additionalCompilerArguments="-locale en_US" autoRSLOrdering="true" copyDependentFiles="false" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="false" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin" removeUnusedRSL="true" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="false" useDebugRSLSwfs="true" useFlashSDK="false" verifyDigests="true" warn="true">
     <compilerSourcePath>
       <compilerSourcePathEntry kind="1" linkType="1" path="1-core"/>
-      <compilerSourcePathEntry kind="1" linkType="1" path="2-template"/>
-      <compilerSourcePathEntry kind="1" linkType="1" path="3-console"/>
-      <compilerSourcePathEntry kind="1" linkType="1" path="4-scene"/>
-      <compilerSourcePathEntry kind="1" linkType="1" path="5-stage"/>
+      <compilerSourcePathEntry kind="1" linkType="1" path="2-console"/>
+      <compilerSourcePathEntry kind="1" linkType="1" path="3-stage"/>
     </compilerSourcePath>
     <libraryPath defaultLinkType="0">
       <libraryPathEntry kind="4" path="">

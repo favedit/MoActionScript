@@ -31,7 +31,21 @@ package mo.gl.console.achievement
 		}
 		
 		//============================================================
-		// <T>获取数据处理。</T>
+		// <T>获取排序处理。</T>
+		//============================================================
+		public function doSort(owner:Object, callback:Function):FLoader{
+			// 获得网络地址
+			var serviceHost:String = RCmConsole.environmentConsole.findValue(ELgConstant.ServiceHost);
+			var url:String = "http://" + serviceHost + "/eai/achievement/sort";
+			// 加载数据
+			var loader:FJsonLoader = new FJsonLoader();
+			loader.registerComplete(callback, owner);
+			loader.load(url);
+			return loader;
+		}
+		
+		//============================================================
+		// <T>获取查询处理。</T>
 		//============================================================
 		public function doQuery(owner:Object, callback:Function, guid:String):FLoader{
 			// 获得网络地址
