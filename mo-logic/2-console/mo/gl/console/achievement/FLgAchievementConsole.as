@@ -19,10 +19,10 @@ package mo.gl.console.achievement
 		//============================================================
 		// <T>获取数据处理。</T>
 		//============================================================
-		public function doWhole(owner:Object, callback:Function):FLoader{
+		public function doGroup(owner:Object, callback:Function):FLoader{
 			// 获得网络地址
 			var serviceHost:String = RCmConsole.environmentConsole.findValue(ELgConstant.ServiceHost);
-			var url:String = "http://" + serviceHost + "/eai/achievement/whole";
+			var url:String = "http://" + serviceHost + "/eai/achievement/group";
 			// 加载数据
 			var loader:FJsonLoader = new FJsonLoader();
 			loader.registerComplete(callback, owner);

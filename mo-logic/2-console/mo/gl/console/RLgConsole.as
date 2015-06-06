@@ -2,7 +2,7 @@ package mo.gl.console
 {
 	import mo.gl.console.achievement.FLgAchievementConsole;
 	import mo.gl.console.organization.FLgOrganizationConsole;
-	import mo.gl.console.task.FLgTaskConsole;
+	import mo.gl.console.schedule.FLgScheduleConsole;
 	
 	//============================================================
 	// <T>逻辑控制台。</T>
@@ -16,7 +16,7 @@ package mo.gl.console
 		protected static var _achievementConsole:FLgAchievementConsole;
 		
 		// 任务控制台
-		protected static var _taskConsole:FLgTaskConsole;
+		protected static var _taskConsole:FLgScheduleConsole;
 
 		//============================================================
 		// <T>获得组织控制台。</T>
@@ -47,9 +47,9 @@ package mo.gl.console
 		//
 		// @return 任务控制台
 		//============================================================
-		public static function get taskConsole():FLgTaskConsole{
+		public static function get taskConsole():FLgScheduleConsole{
 			if(_taskConsole == null){
-				_taskConsole = new FLgTaskConsole();
+				_taskConsole = new FLgScheduleConsole();
 			}
 			return _taskConsole;
 		}
